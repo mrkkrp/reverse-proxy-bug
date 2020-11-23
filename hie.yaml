@@ -1,0 +1,4 @@
+cradle:
+  stack:
+    - path: "./app"
+      component: "reverse-proxy-bug:exe:reverse-proxy-bug"

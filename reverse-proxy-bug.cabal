@@ -1,0 +1,26 @@
+cabal-version: 1.18
+name:          reverse-proxy-bug
+version:       0.0.1.0
+maintainer:    Christopher Mika, Mark Karpov
+author:        Christopher Mika, Mark Karpov
+synopsis:      GraphQL API test suite
+build-type:    Simple
+
+executable reverse-proxy-bug
+    main-is:          Main.hs
+    hs-source-dirs:   app
+    default-language: Haskell2010
+    ghc-options:
+        -Wall -Werror -Wcompat -Wincomplete-record-updates
+        -Wincomplete-uni-patterns -Wnoncanonical-monad-instances
+        -optP-Wno-nonportable-include-path
+
+    build-depends:
+        async -any,
+        base -any,
+        bytestring -any,
+        conduit-extra -any,
+        http-reverse-proxy -any,
+        http-types -any,
+        wai -any,
+        warp -any
